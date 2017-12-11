@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Study01_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="80L-WU-KUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Og-eY-gHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eti-ya-YoB">
+                                <rect key="frame" x="27.666666666666657" y="118.66666666666669" width="360" height="500.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이야! 내가 바로 야생의 참치다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOL-YG-5Ll">
+                                        <rect key="frame" x="78" y="371" width="204" height="20.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p0u-ca-u3o">
+                                        <rect key="frame" x="30" y="47" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="lEX-de-UlJ"/>
+                                            <constraint firstAttribute="width" constant="300" id="ujo-rK-YUw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vc5-oD-1xF">
+                                        <rect key="frame" x="75" y="429.99999999999994" width="210" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh0-6a-M4z">
+                                                <rect key="frame" x="141" y="2" width="69" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="이미지 변경"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-ak-4Fo">
+                                                <rect key="frame" x="0.0" y="2" width="69" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="테스트 버튼"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="210" id="GPy-i5-JGP"/>
+                                            <constraint firstAttribute="height" constant="35" id="X61-BO-oNg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EOL-YG-5Ll" firstAttribute="centerX" secondItem="eti-ya-YoB" secondAttribute="centerX" id="2ci-Qc-o6u"/>
+                                    <constraint firstAttribute="height" constant="500" id="7R6-bg-LXl"/>
+                                    <constraint firstAttribute="bottom" secondItem="vc5-oD-1xF" secondAttribute="bottom" constant="35" id="7XV-In-YjV"/>
+                                    <constraint firstItem="vc5-oD-1xF" firstAttribute="centerX" secondItem="eti-ya-YoB" secondAttribute="centerX" id="H7W-ua-RAd"/>
+                                    <constraint firstAttribute="width" constant="360" id="HrA-cB-80r"/>
+                                    <constraint firstItem="p0u-ca-u3o" firstAttribute="centerX" secondItem="eti-ya-YoB" secondAttribute="centerX" id="ecg-J8-6w8"/>
+                                    <constraint firstItem="p0u-ca-u3o" firstAttribute="top" secondItem="eti-ya-YoB" secondAttribute="top" constant="47" id="uX1-mE-Mll"/>
+                                    <constraint firstAttribute="bottom" secondItem="EOL-YG-5Ll" secondAttribute="bottom" constant="108.5" id="zbK-xu-GGF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eti-ya-YoB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C1J-yA-xfl"/>
+                            <constraint firstItem="eti-ya-YoB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OrV-VD-IEz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="p0u-ca-u3o" id="Uqj-f0-Olu"/>
+                        <outlet property="buttonTest" destination="LRJ-ak-4Fo" id="OHv-bx-jhi"/>
+                        <outlet property="changeBtn" destination="Xh0-6a-M4z" id="AzR-vy-oeq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.289855072463769" y="28.532608695652176"/>
+        </scene>
+    </scenes>
+</document>
