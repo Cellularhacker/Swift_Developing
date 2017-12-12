@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Homework01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KQf-4Q-N56"/>
+                        <viewControllerLayoutGuide type="bottom" id="8VN-3N-Cz3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1En-xX-ZKf">
+                                <rect key="frame" x="10" y="59.5" width="300" height="450"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eZe-aD-0of">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="kS4-4j-1Je"/>
+                                            <constraint firstAttribute="width" constant="300" id="s0e-Fn-EHH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXp-Nc-nPx">
+                                        <rect key="frame" x="25" y="364" width="250" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fv-hj-Kij">
+                                                <rect key="frame" x="8" y="10" width="69" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="이미지 변경"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leB-4h-di8">
+                                                <rect key="frame" x="177" y="10" width="65" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="피! 피카츄!"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bFW-MY-dp9"/>
+                                            <constraint firstAttribute="width" constant="250" id="p1b-Kw-z3h"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="싸우지 말고 히오스하자!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaW-Nk-6HU">
+                                        <rect key="frame" x="70" y="314" width="161" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zaW-Nk-6HU" firstAttribute="centerX" secondItem="1En-xX-ZKf" secondAttribute="centerX" id="0Ci-Cj-IRP"/>
+                                    <constraint firstAttribute="height" constant="450" id="0z2-vb-sap"/>
+                                    <constraint firstItem="KXp-Nc-nPx" firstAttribute="centerX" secondItem="1En-xX-ZKf" secondAttribute="centerX" id="32I-cj-xEr"/>
+                                    <constraint firstItem="zaW-Nk-6HU" firstAttribute="top" secondItem="eZe-aD-0of" secondAttribute="bottom" constant="14" id="8ij-KV-kAP"/>
+                                    <constraint firstItem="eZe-aD-0of" firstAttribute="top" secondItem="1En-xX-ZKf" secondAttribute="top" id="QTs-RH-JOn"/>
+                                    <constraint firstAttribute="width" constant="300" id="dQY-65-nbd"/>
+                                    <constraint firstItem="eZe-aD-0of" firstAttribute="centerX" secondItem="1En-xX-ZKf" secondAttribute="centerX" id="qns-PL-paZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="KXp-Nc-nPx" secondAttribute="bottom" constant="36" id="zQv-2r-FKd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1En-xX-ZKf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MjF-WT-FMP"/>
+                            <constraint firstItem="1En-xX-ZKf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MyX-Bs-bqQ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="imageView" destination="eZe-aD-0of" id="rC6-O8-Yhd"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="changeImage" destination="8Fv-hj-Kij" id="Ydy-VE-GkZ"/>
+                        <outlet property="changeImageButton" destination="8Fv-hj-Kij" id="M3v-vh-SuR"/>
+                        <outlet property="imageView" destination="eZe-aD-0of" id="QMU-PH-kNV"/>
+                        <outlet property="randomButton" destination="leB-4h-di8" id="QhM-9O-1Sv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+</document>
